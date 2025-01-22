@@ -1,6 +1,7 @@
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 import { SESSION_COOKIE } from '$lib/appwrite';
+
 export const GET: RequestHandler = async ({ cookies }) => {
   const sessionId = cookies.get(SESSION_COOKIE);
   
