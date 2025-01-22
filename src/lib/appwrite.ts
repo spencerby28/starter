@@ -2,7 +2,7 @@ import { Client, Account, Databases } from 'node-appwrite';
 import { PUBLIC_APPWRITE_ENDPOINT, PUBLIC_APPWRITE_PROJECT_ID } from '$env/static/public';
 import { APPWRITE_KEY } from '$env/static/private';
 
-export const SESSION_COOKIE = 'gauntlet-starter';
+export const SESSION_COOKIE = PUBLIC_APPWRITE_PROJECT_ID;
 
 export function createAdminClient() {
     const client = new Client()
